@@ -1,0 +1,32 @@
+Rects rects;
+Icecreams icecreams1;
+Icecreams icecreams2;
+Icecreams icecreams3;
+Icecreams icecreams4;
+
+void setup () {
+  background(0);
+  size (560, 700); 
+  
+  rects = new Rects();
+  pushMatrix();
+  translate(280, 120);
+  rotate(radians(45));
+  rects.display();
+  popMatrix();
+  
+  Icecreams icecreams1 = new Icecreams(255, 280, 240, 500, 390);
+  Icecreams icecreams2 = new Icecreams(255, 280, 350, 520, 175);
+  Icecreams icecreams3 = new Icecreams(255, 280, 320, 520, 175);
+  Icecreams icecreams4 = new Icecreams(255, 280, 290, 520, 175);
+
+  icecreams1.display();
+  icecreams2.display();
+  icecreams3.display();
+  icecreams4.display();
+  
+}
+
+void draw () {
+  
+}
