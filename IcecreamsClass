@@ -1,0 +1,23 @@
+class Icecreams {
+ 
+  color c;
+  float icX;
+  float icY;
+  float icWidth;
+  float icHeight;
+
+  Icecreams (color tempC, float tempIcX, float tempIcY, float tempIcWidth, float tempIcHeight) {
+    c = tempC;
+    icX = tempIcX;
+    icY = tempIcY;
+    icWidth = tempIcWidth;
+    icHeight = tempIcHeight;
+  }
+
+  void display() {
+    noStroke();
+    fill(c);
+    ellipse(icX, icY, icWidth, icHeight);
+    
+  }
+}
