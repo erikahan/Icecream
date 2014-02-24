@@ -1,0 +1,28 @@
+class Rects {
+  
+  float rectX;
+  float rectY;
+  float rectWidth;
+  float rectHeight;
+  
+  Rects () {
+    rectX = 0;
+    rectY = 0;
+    rectWidth = 20;
+    rectHeight = 20;
+  }
+  
+  void display() {
+    for (int i = 10; i < 360; i = i+20){
+        rectX = i;
+      for (int k = 10; k < 360; k = k+20){
+        rectY = k;
+   
+    rectMode(CENTER);
+    stroke(255);
+    fill(255, random(50, 255));
+    rect(rectX, rectY, rectWidth, rectHeight);
+    }
+    }
+  }
+  }
